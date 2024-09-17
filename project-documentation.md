@@ -275,7 +275,8 @@ Note:
 
 ![image](https://github.com/user-attachments/assets/6e6def2b-9c49-4fe7-81a1-d24e05d36d39)
 
-4. Once the release is complete, launch the Azure Cloud Shell and run the below commands to see the pods running in AKS:
+4. Once the release is complete, launch the Azure Cloud Shell and run the below commands to see the pods running in AKS: <br />
+
 a. Type az aks get-credentials --resource-group akshandsonlab --name aks-deploy-training in the command prompt to get the access credentials for the Kubernetes cluster. 
 
 ![image](https://github.com/user-attachments/assets/5f7709df-6797-453d-93c6-ee4bd507984b)
