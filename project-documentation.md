@@ -1,3 +1,9 @@
+<h1> Disclaimer </h1>
+
+Many thanks to the guidance offered in the laboratory: https://www.azuredevopslabs.com/labs/vstsextend/kubernetes/#overview.
+
+The documentation is customized with my implementation and how I solved the issues that have appeared along the way.
+
 <h1> Overview </h1>
 
 Azure Kubernetes Service (AKS) is the fastest way to deploy Kubernetes on Azure. AKS handles the complexities of your hosted Kubernetes environment, allowing you to focus on building and managing containerized applications. It automates operations like provisioning, scaling, and upgrading resources, ensuring minimal downtime. Azure DevOps streamlines Docker image creation for efficient and reliable deployments.
