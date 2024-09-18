@@ -143,7 +143,8 @@ Click on “Set server Firewall” and enable “Allow Azure services …” opt
 
 I manually mapped Azure resources such as AKS and Azure Container Registry to the build and release definitions.
 
-Steps
+<h2> Steps </h2>
+
 1. Navigate to Pipelines, select and edit MyHealth.AKS.Build pipeline and click Edit.
 
 ![image](https://github.com/user-attachments/assets/0d3e95d4-1856-4ba6-adbe-dc13ee15c6d9)
@@ -171,7 +172,6 @@ Note: Explanations of the above services and important files used in the deploym
 The manifest file will look like as in the following screenshot:
 
 ![image](https://github.com/user-attachments/assets/c933edb5-e3d5-4934-8d04-046978d29cd9)
-
 
 4. Click on the Variables tab and update ACR and SQLserver values for Pipeline Variables with the details saved earlier while configuring the environment. Then save the changes.
 
@@ -205,7 +205,8 @@ I also have a YAML build pipeline. It is the same configuration of the above pip
 
 ![image](https://github.com/user-attachments/assets/12cc54b1-f0e5-4e83-8b74-e518f4b40396)
 
-Release pipeline configuration
+<h1> Release pipeline configuration </h1>
+
 1. Navigate to Pipelines ->  Releases -> Select MyHealth.AKS.Release pipeline and click Edit.
 
 ![image](https://github.com/user-attachments/assets/38af3408-fe16-4131-9136-9eba8f080dce)
@@ -229,7 +230,6 @@ Update the Azure Subscription, Resource Group and Kubernetes cluster from the dr
 **Note:** Explanations of the steps used in the pipeline.
 
 ![image](https://github.com/user-attachments/assets/584f73a7-ac86-4f4d-9ab5-90972f0f0607)
-
 
 -  A secret called mysecretkey is created in AKS cluster through Azure DevOps by using command kubectl create secret in the background. This secret will be used for authorization while pulling myhealth.web image from the Azure Container Registry. <br />
 
