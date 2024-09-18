@@ -12,8 +12,8 @@ The pipeline can be broken down into several key stages:
 **2. Environment:** The pipeline runs on a virtual machine with the Ubuntu-latest operating system. <br />
 **3. Token replacement:** This stage replaces specific values (tokens) within configuration files with appropriate values for deployment. <br />
 
-**Step 1:** Replaces tokens in appsettings.json located within the src/MyHealth.Web directory. <br />
-**Step 2:** Replaces tokens prefixed and suffixed with double underscores (__) in the mhc-aks.yaml file. <br />
+   **Step 1:** Replaces tokens in appsettings.json located within the src/MyHealth.Web directory. <br />
+   **Step 2:** Replaces tokens prefixed and suffixed with double underscores (__) in the mhc-aks.yaml file. <br />
 
 4. Building and Pushing Docker Images:
 
@@ -31,6 +31,7 @@ This stage copies the mhc-aks.yaml file and any .dacpac files (likely database d
 This final stage publishes a compressed package (artifact) named "deploy" containing the copied files from the previous step. This artifact can be used to deploy the application to a specific environment (e.g., staging or production). <br />
 
 <h2> Additional notes </h2>
+
 This is a basic example, and additional steps might be required for a complete deployment process (e.g., deploying the application to a specific environment, running integration tests). <br />
 
 The specific values for Azure resources (subscription ID, container registry details) are likely stored as secrets within Azure DevOps and referenced securely within the pipeline. <br />
